@@ -1,0 +1,11 @@
+venv/
+dataset/
+runs/
+staging_images/
+annotation_preview/
+inference_results/
+__pycache__/
+*.pyc
+.DS_Store
+yolo*pt
+bus_dataset/

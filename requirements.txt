@@ -1,0 +1,15 @@
+# Core
+ultralytics          # YOLO26 + model loading
+supervision          # Dataset loading and annotation preview
+
+# Auto-labeling
+autodistill
+autodistill-grounding-dino  # bbox-only, ~900MB RAM (vs GroundedSAM ~2.5GB — avoids OOM on Jetson)
+roboflow             # required by autodistill.helpers (undeclared dep)
+scikit-learn         # required by autodistill.core.embedding_ontology (undeclared dep)
+
+# Image processing
+opencv-python
+
+# Transformers pinned for autodistill compatibility
+transformers==4.38.2
